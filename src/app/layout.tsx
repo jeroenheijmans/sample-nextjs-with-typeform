@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='flex min-h-screen flex-col items-center border bg-gradient-to-br from-stone-100 via-stone-200 via-40% to-stone-400'>
+        <main className='flex min-h-screen flex-col items-center border bg-stone-200'>
           <div className='mx-auto flex w-full max-w-[800px] flex-col p-2 md:p-4 lg:p-8'>
             <NavBar />
             <div className='min-h-48'>{children}</div>
