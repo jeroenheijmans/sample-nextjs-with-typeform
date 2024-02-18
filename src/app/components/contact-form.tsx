@@ -15,21 +15,23 @@ export default function ContactForm() {
 
   const widgetMemo = useMemo(() => {
     return (
-      <Widget
-        id='GPszre2l'
-        className='m-4 min-h-[600px] rounded border border-black'
-        opacity={75}
-        disableScroll={true}
-        enableSandbox={true}
-        autoResize={true}
-        hidden={typeFormHiddenFields}
-        onReady={() => setTypeFormState('Ready')}
-        onStarted={() => setTypeFormState('Started')}
-        onSubmit={() => setTypeFormState('Submitted')}
-        onClose={() => setTypeFormState('Closed')}
-        onEndingButtonClick={() => setTypeFormState('EndingButtonClicked')}
-        onQuestionChanged={() => setQuestionChangeTime(new Date())}
-      />
+      <div className='m-4'>
+        <Widget
+          id='GPszre2l'
+          className='min-h-[600px] rounded border border-black'
+          opacity={75}
+          disableScroll={true}
+          enableSandbox={true}
+          autoResize={true}
+          hidden={typeFormHiddenFields}
+          onReady={() => setTypeFormState('Ready')}
+          onStarted={() => setTypeFormState('Started')}
+          onSubmit={() => setTypeFormState('Submitted')}
+          onClose={() => setTypeFormState('Closed')}
+          onEndingButtonClick={() => setTypeFormState('EndingButtonClicked')}
+          onQuestionChanged={() => setQuestionChangeTime(new Date())}
+        />
+      </div>
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

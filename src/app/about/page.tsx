@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import Desert from '../../../public/desert.jpg';
-import AboutForm from '../components/about-form';
+
+const AboutForm = dynamic(() => import('../components/about-form'), {
+  ssr: false,
+});
 
 export default function Details() {
   return (
