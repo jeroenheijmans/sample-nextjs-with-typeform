@@ -13,3 +13,7 @@ npm run dev
 
 Possibly more instructions are forthcoming.
 To integrate your own Typeform forms you'll need to change the code a bit.
+
+## Documentation
+
+- [Typeform React Embed documentation](https://www.typeform.com/developers/embed/react/)
