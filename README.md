@@ -14,7 +14,7 @@ npm run dev
 ```
 
 Possibly more instructions are forthcoming.
-To integrate your own Typeform forms you'll need to change the code a bit.
+To integrate your own forms you'll need to change the code a bit.
 
 ## Documentation
 
