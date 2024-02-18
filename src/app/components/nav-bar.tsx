@@ -18,10 +18,10 @@ export default function NavBar() {
         Home
       </Link>
       <Link
-        className={`${navLinkStyle} ${pathname === '/details' ? 'border-gray-800/100' : ''}`}
-        href='/details'
+        className={`${navLinkStyle} ${pathname === '/pop-up-demo' ? 'border-gray-800/100' : ''}`}
+        href='/pop-up-demo'
       >
-        Details
+        Pop-up Demo
       </Link>
       <Link
         className={`${navLinkStyle} ${pathname === '/about' ? 'border-gray-800/100' : ''}`}

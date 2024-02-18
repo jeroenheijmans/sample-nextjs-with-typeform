@@ -1,6 +1,6 @@
 import SurveyForm from '../components/survey-form';
 
-export default function Details() {
+export default function PopUpDemo() {
   return (
     <div className='px-4'>
       <h1 className='mt-8 text-4xl font-bold'>Details of this application</h1>
