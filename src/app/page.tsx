@@ -7,9 +7,7 @@ export default function Home() {
   return (
     <>
       <div className='px-4'>
-        <h1 className='mt-8 text-4xl font-bold'>
-          NextJS with Typeform Sample Application
-        </h1>
+        <h1 className='mt-8 text-4xl font-bold'>NextJS with Typeform Sample</h1>
         <p className='my-8'>
           This application showcases how Typeform could work inside a NextJS
           application. Different pages will have different examples of forms

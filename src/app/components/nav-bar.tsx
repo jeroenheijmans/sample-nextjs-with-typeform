@@ -24,10 +24,10 @@ export default function NavBar() {
         Pop-up Demo
       </Link>
       <Link
-        className={`${navLinkStyle} ${pathname === '/about' ? 'border-gray-800/100' : ''}`}
-        href='/about'
+        className={`${navLinkStyle} ${pathname === '/pop-over-demo' ? 'border-gray-800/100' : ''}`}
+        href='/pop-over-demo'
       >
-        About
+        Pop-over Demo
       </Link>
     </nav>
   );
