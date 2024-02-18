@@ -1,7 +1,8 @@
 'use client';
 
 import { Widget } from '@typeform/embed-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
+import QuestionChangeTime from './question-change-time';
 
 export default function ContactForm() {
   const typeFormHiddenFields = {
@@ -11,10 +12,6 @@ export default function ContactForm() {
 
   const [typeFormState, setTypeFormState] = useState('Loading...');
   const [questionChangeTime, setQuestionChangeTime] = useState<Date>();
-
-  useEffect(() => {
-    setQuestionChangeTime(new Date());
-  }, []);
 
   const widgetMemo = useMemo(() => {
     return (
@@ -41,8 +38,7 @@ export default function ContactForm() {
     <div className='rounded border border-stone-400 bg-amber-50'>
       <h2 className='p-4 text-xl font-bold'>Contact Form Example</h2>
       <p className='px-4'>
-        Note: the sandbox mode is enabled so no actual data is submitted or
-        saved.
+        Note: sandbox mode is enabled so no actual data is submitted or saved.
       </p>
       <p className='mt-4 px-4'>
         Typeform form is:
@@ -51,12 +47,7 @@ export default function ContactForm() {
         </span>
       </p>
       {widgetMemo}
-      <p className='mb-4 px-4'>
-        Last question change:
-        <span className='ml-1 inline-block rounded-xl border border-amber-300 bg-amber-200 px-2 font-bold text-amber-900'>
-          {questionChangeTime?.toISOString()?.substring(11, 23) || '-'}
-        </span>
-      </p>
+      <QuestionChangeTime time={questionChangeTime} />
     </div>
   );
 }
