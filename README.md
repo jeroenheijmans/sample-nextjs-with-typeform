@@ -4,6 +4,10 @@ This is a sample NextJS application which demonstrates integration of [Typeform]
 
 Latest production version can be viewed online at [sample-nextjs-with-typeform.vercel.app](https://sample-nextjs-with-typeform.vercel.app/).
 
+## ⚠️ Notice about updates
+
+Note that this repository is provided "as-is" and will most likely not receive any (security) updates.
+
 ## Running
 
 Install dependencies and run the code:
